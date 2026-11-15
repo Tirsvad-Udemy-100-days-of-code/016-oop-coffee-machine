@@ -59,5 +59,5 @@ Go — validated against the Business Case and the milestones; the plan is accep
 ---
 
 [PP-001]: ../../project-plan.md
-[QC-LANG-001]: ../../../framework/qc/qc-language-domain.md
+[QC-LANG-001]: ../../../framework/qc/artifacts/qc-language-domain.md
 [c24f412]: https://git.tirsystem.com/Tirsvad-Udemy-100_days_of_code/016-oop_coffee_machine/commit/c24f41207fb15f39b0ad6501e1f3126d3bd9232e

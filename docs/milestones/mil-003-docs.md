@@ -6,13 +6,14 @@
 | ID | MIL-003 |
 | CrossReference | [BC-001], [SA-001], [PP-001] |
 | Language | en |
-| Domain | it |
+| Domain | education |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-07 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | [c24f412] |
-| 2026-10-07 | Accepted | Jens Tirsvad Nielsen | S01 | Accepted after RC-005 (Go) | [c24f412] |
+| 2026-10-07 | Deprecated | Jens Tirsvad Nielsen | S01 | Accepted after RC-005 (Go) | [c24f412] |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Set the domain to education (metadata only; content unchanged); reviewed in autonomous mode, not independent | [5278b45] |
 
 ---
 
@@ -72,3 +73,4 @@ README following the course template, generated Doxygen documentation steps, and
 [SA-001]: ../stakeholder-analysis.md
 [PP-001]: ../project-plan.md
 [c24f412]: https://git.tirsystem.com/Tirsvad-Udemy-100_days_of_code/016-oop_coffee_machine/commit/c24f41207fb15f39b0ad6501e1f3126d3bd9232e
+[5278b45]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/016-oop-coffee-machine/commit/5278b4588919b4665f72ef3eb43a7bb30d4d6c8d
