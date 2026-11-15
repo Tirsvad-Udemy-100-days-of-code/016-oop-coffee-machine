@@ -14,10 +14,41 @@ The classes and methods use the assignment's names:
 | `CoffeeMaker` | `report`, `is_resource_sufficient`, `make_coffee` |
 | `MoneyMachine` | `report`, `process_coins`, `make_payment` |
 
+## 📚 Table of Contents
+
+- [Overview](#-overview)
+- [Requirements](#-requirements)
+- [Setup](#-setup)
+- [Run](#-run)
+- [Tests](#-tests)
+- [License](#-license)
+- [Links](#-links)
+- [Appendix: Project documents](#-appendix-project-documents)
+
+## 🧭 Overview
+
 At the prompt you can type a drink name (`espresso`, `latte` or `cappuccino`),
 `report` to print the resources and the money in the machine, or `off` to stop.
 
-## Requirements
+### Project layout
+
+```text
+.
+├── src/coffee_machine/   The program
+│   ├── constants.py      Menu, resources, coins, commands and messages
+│   ├── menu.py           Menu and MenuItem
+│   ├── coffee_maker.py   CoffeeMaker
+│   ├── money_machine.py  MoneyMachine
+│   ├── main.py           The loop that keeps the machine running
+│   └── __main__.py       Lets `python -m coffee_machine` start the program
+├── tests/                pytest tests
+├── docs/                 Project documents (business case, plan, milestones, reviews)
+├── Doxyfile              Doxygen configuration
+├── pyproject.toml        Project configuration
+└── .gitea/workflows/     Continuous integration
+```
+
+## 📋 Requirements
 
 - Python 3.13 or newer.
 - `venv` and `pip`, which come with Python (on Debian they are separate packages).
@@ -27,13 +58,13 @@ At the prompt you can type a drink name (`espresso`, `latte` or `cappuccino`),
 There are no runtime dependencies. `pytest`, `ruff` and `mypy` are installed
 only for development, through the `dev` extra.
 
-## Set up
+## 🛠️ Setup
 
 Clone the repository and change into it:
 
 ```bash
-git clone https://git.tirsystem.com/Tirsvad-Udemy-100_days_of_code/016-oop_coffee_machine.git
-cd 016-oop_coffee_machine
+git clone https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/016-oop-coffee-machine.git
+cd 016-oop-coffee-machine
 ```
 
 Then create a local virtual environment named `.venv`, upgrade `pip` and install
@@ -76,7 +107,7 @@ python -m pip install -e ".[dev]"
 
 To leave the virtual environment, run `deactivate`.
 
-## Run
+## ▶️ Run
 
 With the virtual environment active:
 
@@ -104,7 +135,20 @@ Here is your latte. Enjoy!
 What would you like? (espresso/latte/cappuccino): off
 ```
 
-## Run the tests
+### Build the source documentation
+
+The source uses Doxygen comments and the `Doxyfile` in the repository root. Install
+Doxygen (`winget install DimitriVanHeesch.Doxygen` on Windows,
+`sudo apt install doxygen` on Debian, `brew install doxygen` on MacOS), then run:
+
+```bash
+doxygen Doxyfile
+```
+
+The HTML documentation is written to `docs/doxygen/html/`; open `index.html` in a
+browser. The output folder is ignored by git.
+
+## 🧪 Tests
 
 With the virtual environment active:
 
@@ -119,7 +163,7 @@ ruff check .
 mypy
 ```
 
-## Continuous integration
+### Continuous integration
 
 The workflow in `.gitea/workflows/ci.yml` runs on Gitea Actions on every push and
 pull request. It creates a virtual environment on Python 3.13, upgrades `pip`,
@@ -127,37 +171,38 @@ installs the project with the `dev` extra and runs `ruff check .`, `mypy` and
 `python -m pytest`. GitHub does not read the `.gitea` folder, so a GitHub mirror
 does not run it.
 
-## Build the source documentation
+## 📄 License
 
-The source uses Doxygen comments and the `Doxyfile` in the repository root. Install
-Doxygen (`winget install DimitriVanHeesch.Doxygen` on Windows,
-`sudo apt install doxygen` on Debian, `brew install doxygen` on MacOS), then run:
+GNU Affero General Public License v3.0, see [LICENSE][license].
 
-```bash
-doxygen Doxyfile
-```
+## 🔗 Links
 
-The HTML documentation is written to `docs/doxygen/html/`; open `index.html` in a
-browser. The output folder is ignored by git.
+- [Repository][repository]
+- [Documentation][documentation]
+- [Issue tracker][issues]
 
-## Project layout
+## 📎 Appendix: Project documents
 
-```text
-.
-├── src/coffee_machine/   The program
-│   ├── constants.py      Menu, resources, coins, commands and messages
-│   ├── menu.py           Menu and MenuItem
-│   ├── coffee_maker.py   CoffeeMaker
-│   ├── money_machine.py  MoneyMachine
-│   ├── main.py           The loop that keeps the machine running
-│   └── __main__.py       Lets `python -m coffee_machine` start the program
-├── tests/                pytest tests
-├── docs/                 Project documents (business case, plan, milestones, reviews)
-├── Doxyfile              Doxygen configuration
-├── pyproject.toml        Project configuration
-└── .gitea/workflows/     Continuous integration
-```
+The documents a newcomer needs, in reading order.
 
-## License
+| Document | What it tells you |
+| --- | --- |
+| [Business Case][BC-001] | Why the project exists, its scope and success criteria |
+| [Stakeholder Analysis][SA-001] | Who is involved; the stakeholder IDs used for owners and reviewers |
+| [Project Plan][PP-001] | The gateways and their schedule |
+| [Milestones][milestones] | One document per gateway: Go/No-Go criteria and tasks |
+| [Artifact registry][registry] | Where each artifact type lives, the next version, the PO language and domain |
+| [Traceability matrix][TM-001] | How the artifacts link and when each was last reviewed |
 
-GNU Affero General Public License v3.0, see [LICENSE](LICENSE).
+---
+
+[repository]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/016-oop-coffee-machine
+[documentation]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/016-oop-coffee-machine/wiki
+[issues]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/016-oop-coffee-machine/issues
+[license]: ./LICENSE
+[BC-001]: ./docs/business-case.md
+[SA-001]: ./docs/stakeholder-analysis.md
+[PP-001]: ./docs/project-plan.md
+[milestones]: ./docs/milestones/
+[registry]: ./docs/artifact-registry.md
+[TM-001]: ./docs/sqa/traceability-matrix.md
