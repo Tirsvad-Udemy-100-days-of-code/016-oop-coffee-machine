@@ -13,7 +13,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-07 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | [c24f412] |
 | 2026-10-07 | Deprecated | Jens Tirsvad Nielsen | S01 | Accepted after RC-006 (Go) | [c24f412] |
-| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline gateway MIL-004, its scope coverage, dependency, risk and Gantt entries; sources on the assumptions; replaced the open issue about the missing QC checklist; set the domain to education; reviewed in autonomous mode, not independent | pending |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline gateway MIL-004, its scope coverage, dependency, risk and Gantt entries; sources on the assumptions; replaced the open issue about the missing QC checklist; set the domain to education; reviewed in autonomous mode, not independent | [5278b45] |
 
 ---
 
@@ -99,3 +99,4 @@ Project starts 2026-10-07
 [MIL-004]: ./milestones/mil-004-framework-baseline.md
 [RC-007]: ./sqa/reviews/rc-007-source-code-mil-002.md
 [Milestone 517]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/016-oop-coffee-machine/milestone/517
+[5278b45]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/016-oop-coffee-machine/commit/5278b4588919b4665f72ef3eb43a7bb30d4d6c8d

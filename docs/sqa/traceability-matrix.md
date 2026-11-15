@@ -11,7 +11,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-07 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | [c24f412] |
 | 2026-10-07 | Deprecated | Jens Tirsvad Nielsen | S01 | Added RC-007 (source code review) to the MIL-002 row | [26d87d0] |
-| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Accepted; added MIL-004, the wiki, the concern coverage and the new review records RC-008 to RC-015; set the domain to education; reviewed in autonomous mode, not independent | pending |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Accepted; added MIL-004, the wiki, the concern coverage and the new review records RC-008 to RC-015; set the domain to education; reviewed in autonomous mode, not independent | [5278b45] |
 
 ---
 
@@ -82,3 +82,4 @@ Tracks backward and forward links between artifact instances so that traceabilit
 [RC-013]: ./reviews/rc-013-milestone-003.md
 [RC-014]: ./reviews/rc-014-milestone-004.md
 [RC-015]: ./reviews/rc-015-wiki.md
+[5278b45]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/016-oop-coffee-machine/commit/5278b4588919b4665f72ef3eb43a7bb30d4d6c8d

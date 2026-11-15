@@ -13,7 +13,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-07 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | [c24f412] |
 | 2026-10-07 | Deprecated | Jens Tirsvad Nielsen | S01 | Fixed Cost-Benefit justification and added completion constraint<br>Accepted after RC-001 (Go) | [c24f412] |
-| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 5, success criterion 6, a scope item, a constraint and a risk for the baseline phase MIL-004; set the domain to education; the baseline phase is allowed to be committed and merged in autonomous mode; spelled out abbreviations; reviewed in autonomous mode, not independent | pending |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 5, success criterion 6, a scope item, a constraint and a risk for the baseline phase MIL-004; set the domain to education; the baseline phase is allowed to be committed and merged in autonomous mode; spelled out abbreviations; reviewed in autonomous mode, not independent | [5278b45] |
 
 ---
 
@@ -145,3 +145,4 @@ Proceed — the scope is small, has no runtime dependencies and gives a lasting 
 [PP-001]: ./project-plan.md
 [c24f412]: https://git.tirsystem.com/Tirsvad-Udemy-100_days_of_code/016-oop_coffee_machine/commit/c24f41207fb15f39b0ad6501e1f3126d3bd9232e
 [MIL-004]: ./milestones/mil-004-framework-baseline.md
+[5278b45]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/016-oop-coffee-machine/commit/5278b4588919b4665f72ef3eb43a7bb30d4d6c8d
